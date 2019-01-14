@@ -2,22 +2,92 @@
 <html>
   <head>
     <title>CSS/HTML Workshop with Privateaser</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <h1>Welcome on this webpage</h1>
+
+    <h2>First fill some information about the bar</h2>
     <div id="bar">
+      <div class="card text-white bg-primary mb-3">
+      <div class="card-header">Bar name</div>
+      <div class="card-body">
+      <p class="card-text">What is the name of the bar you want to book ?</p>
       <input class="js-name" type="text" placeholder="Bar name"/>
-      <input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
+      </div>
+      </div>
+
+      <div class="card text-white bg-secondary mb-3">
+        <div class="card-header">Price by hour</div>
+        <div class="card-body">
+        <p class="card-text">What is the price by hour of this bar ?</p>
+        <input class="js-price-by-hour" type="number" placeholder="Price by hour"/>
+        </div>
+      </div>
+
+      <div class="card text-white bg-success mb-3">
+      <div class="card-header">Price by person</div>
+      <div class="card-body">
+      <p class="card-text">What is the price by person of this bar ?</p>
       <input class="js-price-by-person" type="number" placeholder="Price by person"/>
+      </div>
+      </div>
     </div>
+
+    <h2>Then some information about the booker</h2>
     <div id="booker">
+      <div class="card text-white bg-primary mb-3">
+      <div class="card-header">Booker name</div>
+      <div class="card-body">
+      <p class="card-text">What is the name of the booker ?</p>
       <input class="js-name" type="text" placeholder="Booker name"/>
+      </div>
+      </div>
+
+      <div class="card text-white bg-secondary mb-3">
+      <div class="card-header">Time in h</div>
+      <div class="card-body">
+      <p class="card-text">How long do you want to book this bar ? Please, enter the amount of time in hour.</p>
       <input class="js-time" type="number" placeholder="Time in h"/>
+      </div>
+      </div>
+
+      <div class="card text-white bg-success mb-3">
+      <div class="card-header">Persons</div>
+      <div class="card-body">
+      <p class="card-text">How many people will be in the bar ?</p>
       <input class="js-persons" type="number" placeholder="Persons"/>
+      </div>
+      </div>
+
+      <div class="card text-white bg-info mb-3">
+      <div class="card-header">Deductible option</div>
+      <div class="card-body">
+      <p> The deductible option is useful in the case you want to ... </p>
+      <p class="card-text">Do you want to use the deductible option ?</p>
       <input class="js-option" type="checkbox" placeholder="Deductible option"/>
+      </div>
+      </div>
     </div>
-    <button id="compute">Compute</button>
+
     <div id="actors"></div>
+
+
+
+    <div class="card" style="width:20rem;">
+    <img class="card-img-top img-fluid" src="http://img.over-blog-kiwi.com/2/02/84/05/20160530/ob_21c5f5_calcul.png" alt="card image">
+    <div class="card-body">
+    <h4 class="card-title">Time to compute with fun !</h4>
+    <p class="card-text">If you already filled the different amount you can click on this button to compute.</p>
+    <button id="compute" href="#" class="btn btn-primary">Compute</a>
     <script src="privateaser.js"></script>
     <script src="index.js"></script>
+    </div>
+    </div>
+    <!-- Bootstrap 4 Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
